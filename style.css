@@ -1,0 +1,333 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type:none ;
+}
+header{
+    background-image: url(images/desktop/image-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 44.5rem;
+    max-height: 100%;
+    
+}
+nav{
+    position: relative;
+    display: flex;
+    padding: 2rem 2.2rem;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+}
+.menu-section,ul,nav{
+    display: flex;
+}
+.icon-hamburger{
+    display: none;
+}
+.menu-section ul{
+    gap: 2rem;
+    list-style-type: none;
+    align-items: center;
+}
+.menu-section ul li a,.menu-section a{
+    font-family: 'Barlow', sans-serif;
+    color:white ;
+    text-decoration: none;
+}
+#ul_contact{
+    padding: 1rem 2rem;
+    margin-left: 1rem;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    text-transform: uppercase;
+
+}
+#ul_contact:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+     color: white;
+}
+#sidebar{
+    position: fixed;
+    top:5rem;
+    height: 257px;
+    background-color: white;
+    width: 300px;
+    right: -300px;
+    transition: right 0.3s ease-in-out ;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.sidebar ul {
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar ul a{
+    color: hsl(232, 10%, 55%);
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+
+}
+
+.sidebar ul:hover{
+    border: black;
+}
+#sidebar_contact{
+    padding: 1rem 2rem;
+    color: black;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 30px;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+}
+
+#creative{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 5rem;
+    font-family: 'Fraunces', serif;
+}
+.arrow{
+    position: absolute;
+    top:42%;
+    right: 50%;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: start;
+}
+.picture img{
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    gap: 2rem;
+    padding: 3rem 2rem 2rem 2rem;
+}
+.content h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.content a{
+    font-family: 'Barlow', sans-serif;
+    color: black;
+    letter-spacing:2px;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    text-decoration-color:rgba(250, 212, 0, 0.5);
+    text-decoration-thickness: 0.2rem;
+    
+    
+}
+.content a:hover{
+    text-decoration-color:rgba(250, 212, 0, 1);
+}
+.content p{
+    
+    font-weight: 600;
+    color: hsl(232, 10%, 55%);
+}
+#more{
+    text-decoration-color: rgba(254, 120, 103, 0.5);
+}
+#more:hover{
+    text-decoration-color: rgba(254, 120, 103, 1);
+}
+.picture {
+    flex: 1;
+}
+.item.picture{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top:55%;
+    text-align: center;
+    padding: 0 2rem ;
+}
+.text h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;   
+    margin-bottom: 1rem;
+    color: hsl(168, 34%, 41%);
+}
+.text p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color:  hsl(168, 34%, 41%);
+ 
+}
+.text2{
+    position: absolute;
+    top:55%;
+    text-align: center;
+    padding: 0 2rem ;
+}
+.text2 h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;   
+    margin-bottom: 1rem;
+    color: hsl(198, 62%, 26%);
+}
+.text2 p{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    color: hsl(198, 62%, 26%);
+}
+
+/*testimonies*/
+.testimonial{
+    display: flex;
+    padding: 5rem ;
+    position: relative;
+
+}
+.flex-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex: 33%;
+
+}
+.testimony{
+    color:hsl(213, 9%, 39%);
+    text-align: center;
+}
+.bold{
+    font-family: 'Fraunces', serif;
+    
+}
+.post{
+    color: hsl(210, 4%, 67%) ;
+}
+.client{
+    position: absolute;
+    left:38%;
+    top: 10%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    color:hsl(232, 10%, 55%);
+}
+.t-img{
+    border-radius: 50%;
+    max-width: 10rem;
+    
+}
+footer{
+    background-color:#90d4c5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+    color:hsl(212, 27%, 19%);
+    margin-top:0;
+}
+#footer-logo{
+    fill:hsl(167, 40%, 24%);
+}
+.footer-links li a{
+    text-decoration: none;
+    color: hsl(168, 34%, 41%);
+    margin: 0 1rem;
+    font-weight: bold;
+}
+.footer-links li a:hover{
+    color: white;
+}
+.icon{
+    margin:0 0.5rem ;
+    cursor: pointer;
+
+}
+.img-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: start;
+}
+picture img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+picture{
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:739px) {
+    #sidebar{
+    display: none;
+    }
+}
+@media screen and (max-width:738px){
+    #sidebar{
+        display: block;
+    }
+    .menu-section{
+        display: none;
+    }
+    .icon-hamburger{
+        display: block;
+    }
+    header{
+        background-image: url(images/mobile/image-header.jpg);
+    }
+    .arrow{
+        top:63%;
+    }
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+     .item.picture:nth-child(2) {
+        order: -1;
+    }
+    .text,.text2{
+        top:60%;
+    }
+
+    .client{
+        top:1%;
+        left: 17%;
+        font-size: 1rem;
+
+    }
+    .testimonial{
+        padding: 2rem;
+    }
+    .img-grid{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 0;
+    }
+    .testimonial{
+        overflow-x: hidden;
+        flex-wrap: wrap;
+    }
+
+}
